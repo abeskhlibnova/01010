@@ -6,41 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Барбер шоп</title>
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/icon">
+  <link rel="icon" href="/images/favicon.ico" type="image/icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <!--Шапка-->
-  <header>
-    <!--ADD PIC-->
-    <a href="/">
-      <img src="./images/Logo.svg" alt="Логотип" />
+  <header class="header">
+    <a href="/" class="logo link" aria-label="логотип сайта">
+      <img class="logo-img" src="./images/Logo.svg" alt="Логотип" />
     </a>
-    <nav>
-      <ul>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#prices">Услуги и цены</a></li>
-        <li><a href="#masters">Мастера</a></li>
-        <li><a href="#contacts">Контакты</a></li>
+    <nav class="navigation">
+      <ul class="nav-list list">
+        <li class="nav-list-item"><a href="#about" class="nav-list-link link active-page">О нас</a></li>
+        <li class="nav-list-item"><a href="#prices" class="nav-list-link link">Услуги и цены</a></li>
+        <li class="nav-list-item"><a href="#masters" class="nav-list-link link">Мастера</a></li>
+        <li class="nav-list-item"><a href="#contacts" class="nav-list-link link">Контакты</a></li>
       </ul>
     </nav>
 
-    <a href="tel:0501234567">050 123 45 67</a>
-    <button type="button">Online Запись</button>
+    <a class="contact-number" href="tel:0501234567">050 123 45 67</a>
+    <button class="modal-btn" type="button">Онлайн Запись</button>
   </header>
   <!--Основа-->
   <main>
-    <section>
-      <ul>
-        <li><a href="" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+    <section class="hero">
+      <ul class="social-links-list list">
+        <li class="social-links-list-item"><a class="social-links-list-link link" href="" target="_blank"
+            rel="noopener noreferrer">Instagram</a></li>
+        <li class="social-links-list-item"><a class="social-links-list-link link" href="" target="_blank"
+            rel="noopener noreferrer">Youtube</a></li>
       </ul>
-      <p lang="en">A hir salon for men in Kyiv</p>
-      <h1 lang="en">BarberShop</h1>
-      <p>
-        Какое-то крассивое описание в две строки. <br />
-        что-то еще и бла бла
-      </p>
+      <div class="hero-right-side">
+        <p class="overtitle" lang="en">A hir salon for men in Kyiv</p>
+        <h1 class="main-title" lang="en">BarberShop</h1>
+        <p class="description">
+          Какое-то крассивое описание в две строки. <br />
+          что-то еще и бла бла
+        </p>
+      </div>
+
     </section>
 
     <section>

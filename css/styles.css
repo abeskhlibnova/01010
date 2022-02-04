@@ -1,0 +1,107 @@
+:root {
+  --primary-font-family: 'Open Sans', sans-serif;
+  --secondary-font-famile: 'Raleway', sans-serif;
+  --primary-text-color-theme-dark: #9da4bd;
+  --secondary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-light: #303030;
+  --secondary-text-color-theme-light: #555555;
+  --accent-color: #ff6c00;
+}
+body {
+  font-family: var(--primary-font-family);
+  /* font-size: ;
+  color: ;
+   */
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* ======start components==== */
+
+.modal-btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  /*color: #FFFFFF;*/
+}
+.social-links-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+.social-links-list-link:hover,
+.social-links-list-link:focus {
+  color: var(--accent-color);
+}
+.overtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.main-title {
+  font-family: var(--secondary-font-famile);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  /* color: #FFFFFF; */
+}
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+.a
+
+/* ====end components===== */
+
+/* =====Start Header======= */
+.nav-list-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: #ff6c00;
+}
+.contact-number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  /* color: #ffffff; */
+}
+.contact-number:hover,
+.contact-numberfocus {
+  color: #ff6c00;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #ff6c00;
+  color: #fff;
+}
+/* ===========End header===== */
+
+/* ===========Start hero========== */
