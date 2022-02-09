@@ -19,6 +19,12 @@ body {
 .link {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4 {
+  margin-left: 0;
+}
 /* ======start components==== */
 
 .modal-btn {
