@@ -20,24 +20,29 @@
 <body>
   <!--Шапка-->
   <header class="header">
-    <a href="/" class="logo link" aria-label="логотип сайта">
-      <img class="logo-img" src="./images/logo/Logo.svg" alt="Логотип" />
-    </a>
-    <nav class="navigation">
-      <ul class="nav-list list">
-        <li class="nav-list-item"><a href="#about" class="nav-list-link link active-page">О нас</a></li>
-        <li class="nav-list-item"><a href="#services" class="nav-list-link link">Услуги и цены</a></li>
-        <li class="nav-list-item"><a href="#masters" class="nav-list-link link">Мастера</a></li>
-        <li class="nav-list-item"><a href="#contacts" class="nav-list-link link">Контакты</a></li>
-      </ul>
-    </nav>
+    <div class="container header-container">
+      <nav class="navigation">
+        <a href="/" class="logo link" aria-label="логотип сайта">
+          <img class="logo-img" src="./images/logo/Logo.svg" alt="Логотип" />
+        </a>
+        <ul class="nav-list list">
+          <li class="nav-list-item"><a href="#about" class="nav-list-link link active-page">О нас</a></li>
+          <li class="nav-list-item"><a href="#services" class="nav-list-link link">Услуги и цены</a></li>
+          <li class="nav-list-item"><a href="#masters" class="nav-list-link link">Мастера</a></li>
+          <li class="nav-list-item"><a href="#contacts" class="nav-list-link link">Контакты</a></li>
+        </ul>
+      </nav>
 
-    <a class="contact-number link" href="tel:0501234567">050 123 45 67</a>
-    <button class="modal-btn" type="button">Онлайн Запись</button>
+      <a class="contact-number link" href="tel:0501234567">050 123 45 67</a>
+      <button class="modal-btn" type="button">Онлайн Запись</button>
+
+
+    </div>
+
   </header>
   <!--Основа-->
   <main>
-    <section class="hero">
+    <section class="hero container">
       <div class="hero-left-side">
         <ul class="social-links-list list">
           <li class="social-links-list-item"><a class="social-links-list-link link" href="#" target="_blank"
@@ -56,7 +61,7 @@
       </div>
     </section>
     <!-- ======ABOUT======== -->
-    <section class="about" id="about">
+    <section class="about section" id="about">
       <div class="about-left-side">
         <ul class="about-gallery list">
           <li class="about-gallery-item"><img class="about-gallery-img" src="./images/about/about-us-01.jpg"
@@ -83,7 +88,7 @@
       </div>
     </section>
     <!-- ============services============ -->
-    <section class="services" id="services">
+    <section class="services section" id="services">
       <p class="overtitle overtitle-theme-dark">Проведи время в компании лучших мастеров</p>
       <h2 class="title">Услуги и цены</h2>
       <ul class="services-list list">
@@ -149,71 +154,83 @@
       </div>
     </section>
     <!-- EMPLOYEES -->
-    <section id="masters" class="employees-section">
-      <p class="overtitle overtitle-theme-light">для настоящих ценителей атмосферы</p>
-      <h2 class="title title-theme-light">Наши мастера</h2>
-      <ul class="employees list">
-        <li class="employees-card">
-          <img class="employees-photo" src="./images/masters/master-01.jpg" alt="мастер стрижет клиента" width="370"
-            height="346" />
-          <h3 class="employees-name" lang="en">John Smith</h3>
-          <p class="employees-position" lang="en">Extreme Barber</p>
-          <ul class="social-list list">
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-          </ul>
-        </li>
-        <li class="employees-card">
-          <img class="employees-photo" src="./images/masters/master-02.jpg" alt="мастер стрижет клиента" width="370"
-            height="346" />
-          <h3 class="employees-name" lang="en">Michele Doe</h3>
-          <p class="employees-position" lang="en">Extreme Barber</p>
-          <ul class="social-list list">
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-          </ul>
-        </li>
-        <li class="employees-card">
-          <img class="employees-photo" src="./images/masters/master-03.jpg" alt="мастер стрижет клиента" width="370"
-            height="346" />
-          <h3 class="employees-name" lang="en">Alan Black</h3>
-          <p class="employees-position" lang="en">Extreme Barber</p>
-          <ul class="social-list list">
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-            <li class="social-list-item">
-              <a class="social-list-link" href=""></a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <section id="masters" class="employees-section section">
+      <div class="container">
+        <p class="overtitle overtitle-theme-light">для настоящих ценителей атмосферы</p>
+        <h2 class="title title-theme-light">Наши мастера</h2>
+        <ul class="employees list">
+          <li class="employees-card">
+            <img class="employees-photo" src="./images/masters/master-01.jpg" alt="мастер стрижет клиента" width="370"
+              height="346" />
+            <div class="employees-contant-wrapper">
+              <h3 class="employees-name" lang="en">John Smith</h3>
+              <p class="employees-position" lang="en">Extreme Barber</p>
+            </div>
+
+            <ul class="social-list list">
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+            </ul>
+          </li>
+          <li class="employees-card">
+            <img class="employees-photo" src="./images/masters/master-02.jpg" alt="мастер стрижет клиента" width="370"
+              height="346" />
+            <div class="employees-contant-wrapper">
+              <h3 class="employees-name" lang="en">Michele Doe</h3>
+              <p class="employees-position" lang="en">Extreme Barber</p>
+            </div>
+
+            <ul class="social-list list">
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+            </ul>
+          </li>
+          <li class="employees-card">
+            <img class="employees-photo" src="./images/masters/master-03.jpg" alt="мастер стрижет клиента" width="370"
+              height="346" />
+            <div class="employees-contant-wrapper">
+              <h3 class="employees-name" lang="en">Alan Black</h3>
+              <p class="employees-position" lang="en">Extreme Barber</p>
+            </div>
+
+            <ul class="social-list list">
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+              <li class="social-list-item">
+                <a class="social-list-link" href=""></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
     </section>
 
     <!-- GALLERY -->

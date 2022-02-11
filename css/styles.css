@@ -7,6 +7,11 @@
   --secondary-text-color-theme-light: #555555;
   --accent-color: #ff6c00;
 }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 body {
   font-family: var(--primary-font-family);
   /* font-size: ;
@@ -22,12 +27,44 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6,
+p {
   margin-left: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+/* ++++ne srabotalo+++++ */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* +++++PROVERIT SVOJSTVO++++++ */
+address {
+  font-style: normal;
+}
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 /* ======start components==== */
 
 .modal-btn {
+  min-width: 150px;
+  padding: 12px 16px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
   font-family: inherit;
   font-style: normal;
   font-weight: 600;
@@ -36,8 +73,6 @@ h4 {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
-
-  /*color: #FFFFFF;*/
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -55,6 +90,7 @@ h4 {
   color: var(--accent-color);
 }
 .overtitle {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -63,9 +99,12 @@ h4 {
 }
 .overtitle-theme-dark {
   color: rgb(var(--primary-text-color-theme-dark), 0.6);
+
+  margin-bottom: 44px;
 }
 .overtitle-theme-light {
   color: var(--secondary-text-color-theme-light);
+  margin-bottom: 20px;
 }
 .main-title {
   font-family: var(--secondary-font-famile);
@@ -107,6 +146,24 @@ h4 {
 /* ====end components===== */
 
 /* =====Start Header======= */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+}
+.logo {
+  margin-right: 70px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
 .nav-list-link {
   font-weight: 600;
   font-size: 12px;
@@ -117,20 +174,24 @@ h4 {
 .nav-list-link:focus {
   color: var(--accent-color);
 }
+
+.nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
 .contact-number {
+  margin-left: auto;
+  margin-right: 40px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-
-  /* color: #ffffff; */
 }
 .contact-number:hover,
 .contact-numberfocus {
   color: var(--accent-color);
 }
-
+.
 /* ===========End header===== */
 
 /* ========= START HERO ========= */
@@ -175,7 +236,25 @@ h4 {
 /* ========= END ADVANTAGES ========= */
 
 /* ========= START EMPLOYEES ========= */
+.employees {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.employees-section {
+  background-color: №F7F7F7;
+}
+.employees-card {
+  flex-basis: calc((100%-3 * 30) 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.employees-section .title {
+  margin-bottom: 44px;
+}
 .employees-name {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
@@ -183,7 +262,9 @@ h4 {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
 }
-
+.employees-contant-wrapper {
+  padding-top: 30px;
+}
 .employees-position {
   font-weight: 400;
   font-size: 14px;
@@ -192,6 +273,7 @@ h4 {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+.
 /* ========= END EMPLOYEES ========= */
 
 /* ========= START HERO ========= */
